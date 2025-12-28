@@ -26,6 +26,16 @@ MagneticSensorSPIConfig_s MA730_SPI = {
   .command_parity_bit = 0 // parity not implemented
 };
 
+/**MA702 Config */
+MagneticSensorSPIConfig_s MA702_SPI = {
+  .spi_mode = SPI_MODE0,
+  .clock_speed = 1000000,
+  .bit_resolution = 12,
+  .angle_register = 0x0000,
+  .data_start_bit = 15,
+  .command_rw_bit = 0,  // not required
+  .command_parity_bit = 0 // parity not implemented
+};
 
 // MagneticSensorSPI(int cs, float _bit_resolution, int _angle_register)
 //  cs              - SPI chip select pin

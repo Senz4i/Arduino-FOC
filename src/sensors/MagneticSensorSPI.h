@@ -20,7 +20,7 @@ struct MagneticSensorSPIConfig_s  {
   int command_parity_bit;
 };
 // typical configuration structures
-extern MagneticSensorSPIConfig_s AS5147_SPI,AS5048_SPI,AS5047_SPI, MA730_SPI;
+extern MagneticSensorSPIConfig_s AS5147_SPI,AS5048_SPI,AS5047_SPI, MA730_SPI, MA702_SPI;
 
 class MagneticSensorSPI: public Sensor{
  public:
